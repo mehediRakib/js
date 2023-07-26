@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1=['A','B','c','d'];
+        var a2=['E','E','f'];
+        var a3=a1.concat(a2);
+        document.write(a3+"<br>");
+        var string="Mehedi Hasan Rakib";
+        var string1=Array.from(string);
+        document.write(string1[8]+"<br><br>");
+
+        // uses of filter function
+        var num =[10,20,30,40,50,60,70,80,90,100];
+       var res= num.filter(function(i){
+            return i>70;
+        })
+        document.write(res);
+        // uses of find index function
+        var num1=num.findIndex(function(item){
+            return item>70;
+        })
+        document.write("<br> index"+num1);
+        // uses of for each function
+        num.forEach(function(item){
+            document.write("<br>"+item);
+        })
+        // uses of include function
+        var number=[10,20,30,40,50,60,70,80,90,100];
+        var result=number.includes(80);
+        document.write(result);
+        // uses of indexof Operation
+        var res2=number.indexOf(40);
+        document.write("<br>"+res2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+   var pc={
+    Name:"Dell",
+    processor:"i-3",
+    varsity:"Comilla University",
+    student:"FAria",
+    isssd:true
+   
+   
+   }
+   var city=["Dhaka","chitagang","Cumilla","Rajshahi","sylhet"];
+   var i;
+   for(i=0; i<city.length; i++)
+   {
+    document.write(city[i]+"<br>");
+   }
+   for(var i in city){
+    document.write(city[i]+"<br>");
+   }
+   document.write(pc.varsity);
+   var introduce={
+    Name:"Mehedi Hasan Rakib",
+    Age: 24,
+    Varsity: "Cumilla Universiy",
+    isGraduated:false
+   }
+   for(var i in introduce){
+    document.write(i+": "+introduce[i]+"<br>");
+   }
+</script>
+</body>
+</html>

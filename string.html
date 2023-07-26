@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var country ="bangladesh";
+     
+     //uses of charat function..
+
+     for(var i in country){
+        document.write(
+            country.charAt(i)+"<br>");
+     }
+     //for concate two string
+     var a="Bangladesh ";
+     var b="Pakistan";
+     document.write(a.concat(b)+"<br>");
+     // last index..when a letter uses more than one times
+     document.write(
+        a.lastIndexOf("h")
+        )
+
+        //uses of Replace function
+
+        document.write(
+            a.replace("Bangla","East Pakistan")
+        )
+    // uses of substr function
+    
+    document.write(
+        a.substr(6 ,9)
+    )
+
+</script>
+</body>
+</html>
